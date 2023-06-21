@@ -32,7 +32,7 @@ def firstLeftAlt(A):
     L = [0] * len(A)
     s = [0]
 
-    for i in range(len(A)):
+    for i in range(1, len(A)):
         while A[s[-1]] > A[i]: s.pop()
         L[i] = s[-1]
         
